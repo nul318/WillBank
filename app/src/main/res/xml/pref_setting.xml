@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:title="Member Information"
+            android:key="member_category"
+    >
+        <EditTextPreference
+                android:title="Change password"
+                android:key="password"
+                android:dialogTitle="New Password:"
+                android:dialogMessage="Enter Your New Password"
+                android:defaultValue=" "
+                android:inputType="textPassword"
+
+
+        />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+            android:title="Challenge Information"
+            android:key="challenge_category"
+
+    >
+        <EditTextPreference
+                android:title="Register Bank Account"
+                android:key="bank_account"
+                android:dialogTitle="Your Account Number:"
+                android:dialogMessage="Enter Your Account Info"
+                android:defaultValue=" "
+                android:inputType="number"
+        />
+
+        <SwitchPreference
+            android:title="Drop challenge"
+            android:key="cancel"
+        />
+
+
+    </PreferenceCategory>
+    <PreferenceCategory
+            android:title="Account Settings"
+            android:key="account_category"
+    >
+        <ListPreference
+                android:title="@string/action_sign_out"
+                android:key="signout_category"
+        />
+<ListPreference
+        android:title="Deactivate Account"
+        android:key="deactivate_category"
+/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
