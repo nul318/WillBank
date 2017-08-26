@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="170dp"
+    android:layout_height="210dp"
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:srcCompat="@color/colorPrimary"
+        android:layout_weight="2.5" />
+
+    <LinearLayout
+        android:background="@color/colorPerfectWhite"
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="11dp"
+        android:paddingTop="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="같이 수영해요!" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#303030"
+                android:letterSpacing="0.03"
+                android:text="25명 참여중"
+                />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:gravity="end"
+                android:textColor="#303030"
+                android:letterSpacing="0.03"
+                android:text="8/21"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

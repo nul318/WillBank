@@ -7,13 +7,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-    <android.support.v4.view.ViewPager
+    <com.willbank.view.HomeViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/wrap" />
     <FrameLayout
         android:id="@+id/wrap"
         android:layout_width="match_parent"
@@ -24,16 +25,18 @@
             android:id="@+id/ntb"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            app:ntb_active_color="@color/colorAccent"
-            app:ntb_animation_duration="400"
+            app:ntb_active_color="@color/colorPrimary"
+            app:ntb_animation_duration="0"
             app:ntb_scaled="false"
-            app:ntb_bg_color="@color/colorPrimary"
-            app:ntb_icon_size_fraction="0.5"
-            app:ntb_inactive_color="#FFFFFF"
-            app:ntb_swiped="true"
+            app:ntb_bg_color="@color/colorPerfectWhite"
+            app:ntb_badge_bg_color="@color/colorPerfectWhite"
+
+            app:ntb_icon_size_fraction="0.37"
+            app:ntb_inactive_color="#303030"
+            app:ntb_swiped="false"
             app:ntb_tinted="true"
             app:ntb_title_mode="all"
-            app:ntb_title_size="10sp"
+            app:ntb_title_size="9sp"
             app:ntb_titled="true"
             />
 

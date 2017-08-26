@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="8.5dp"
+            android:layout_height="17dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_marginStart="16dp"
+            app:srcCompat="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.03"
+            android:text="헬스 트레이너 김민성"
+            android:textColor="#303030"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="11dp"
+            app:srcCompat="@drawable/icon_detail_dark" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:letterSpacing="0.04"
+            android:lineSpacingExtra="8sp"
+            android:text="2017년 08월 14일 월요일"
+            android:textColor="#303030"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/msg_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="25dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/msg_1" />
+
+        <ImageView
+            android:id="@+id/msg_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="14dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/msg_2" />
+
+        <ImageView
+            android:id="@+id/msg_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/msg_3" />
+
+        <ImageView
+            android:id="@+id/msg_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/msg_4" />
+
+        <ImageView
+            android:id="@+id/msg_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/msg_5" />
+    </LinearLayout>
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/send" />
+
+</RelativeLayout>

@@ -3,6 +3,11 @@
     <color name="colorPrimary">#0B97F7</color>
     <color name="colorPrimaryDark">#2A86FC</color>
     <color name="colorAccent">#FFFFFF</color>
-    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite">#C3FFFFFF</color>
+    <color name="colorPerfectWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorBackground">#f0f0f0</color>
+    <color name="colorIndicator">#979797</color>
+
+
 </resources>

@@ -2,15 +2,15 @@ package com.willbank.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
 import com.willbank.R;
 import com.willbank.adapter.PagerAdapter;
-import com.willbank.fragment.CertifyFragment;
+import com.willbank.fragment.AnalyzeFragment;
 import com.willbank.fragment.CommunityFragment;
 import com.willbank.fragment.HomeFragment;
-import com.willbank.fragment.SettingsFragment;
+import com.willbank.fragment.SupportFragment;
+import com.willbank.view.HomeViewPager;
 
 import java.util.ArrayList;
 
@@ -26,16 +26,17 @@ public class HomeActivity extends AppCompatActivity {
         PagerAdapter adapter = new PagerAdapter(getSupportFragmentManager());
 
         HomeFragment homeFragment = new HomeFragment();
-        CertifyFragment certifyFragment = new CertifyFragment();
+        AnalyzeFragment analyzeFragment = new AnalyzeFragment();
         CommunityFragment communityFragment = new CommunityFragment();
-        SettingsFragment settingsFragment = new SettingsFragment();
+        SupportFragment supportFragment = new SupportFragment();
 
         adapter.addFragment(homeFragment, "1");
-        adapter.addFragment(certifyFragment, "2");
+        adapter.addFragment(analyzeFragment, "2");
         adapter.addFragment(communityFragment, "3");
-        adapter.addFragment(settingsFragment, "4");
+        adapter.addFragment(supportFragment, "4");
 
-        ViewPager pager = (ViewPager) findViewById(R.id.view_pager);
+        HomeViewPager pager = (HomeViewPager) findViewById(R.id.view_pager);
+        pager.setPagingEnabled(false);
         pager.setAdapter(adapter);
 //        pager.setCurrentItem(0);
 
@@ -43,34 +44,35 @@ public class HomeActivity extends AppCompatActivity {
         final ArrayList<NavigationTabBar.Model> models = new ArrayList<>();
         models.add(
                 new NavigationTabBar.Model.Builder(
-                        getResources().getDrawable(R.mipmap.ic_launcher),
-                        Color.parseColor("#FFFFFF")
+                        getResources().getDrawable(R.drawable.icon1),
+                        Color.argb(255,255,255,255)
                 ).title("Home")
                         .build()
         );
         models.add(
                 new NavigationTabBar.Model.Builder(
-                        getResources().getDrawable(R.mipmap.ic_launcher),
-                        Color.parseColor("#FFFFFF")
-                ).title("Certify")
+                        getResources().getDrawable(R.drawable.icon2),
+                        Color.argb(255,255,255,255)
+                ).title("Analyze")
                         .build()
         );
         models.add(
                 new NavigationTabBar.Model.Builder(
-                        getResources().getDrawable(R.mipmap.ic_launcher),
-                        Color.parseColor("#FFFFFF")
+                        getResources().getDrawable(R.drawable.icon3),
+                        Color.argb(255,255,255,255)
                 ).title("Community")
                         .build()
         );
         models.add(
                 new NavigationTabBar.Model.Builder(
-                        getResources().getDrawable(R.mipmap.ic_launcher),
-                        Color.parseColor("#FFFFFF")
-                ).title("Settings")
+                        getResources().getDrawable(R.drawable.icon4),
+                        Color.argb(255,255,255,255)
+                ).title("Support")
                         .build()
         );
         navigationTabBar.setModels(models);
         navigationTabBar.setViewPager(pager, 0);
+
         navigationTabBar.setBadgeTitleColor(Color.WHITE);
 
 

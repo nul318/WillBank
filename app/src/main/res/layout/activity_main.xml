@@ -33,13 +33,14 @@
         <Button
             android:id="@+id/sign_up_bt"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="Sign Up" />
+            android:layout_height="45dp"
+            android:background="@drawable/btn_join"
+             />
 
         <Button
             android:id="@+id/login_bt"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:background="@drawable/btn_login_selec"
              />
 

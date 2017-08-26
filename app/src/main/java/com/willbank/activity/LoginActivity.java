@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        intent = new Intent(LoginActivity.this, HomeActivity.class);
+        intent = new Intent(LoginActivity.this, ChallengeStepOneActivity.class);
         findViewById(R.id.login_bt).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

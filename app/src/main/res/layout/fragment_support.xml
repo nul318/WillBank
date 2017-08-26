@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:paddingRight="12dp"
+    android:paddingLeft="12dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.03"
+            android:textColor="#303030"
+            android:textSize="15sp"
+            android:text="Support" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/msg_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/search" />
+
+    <TextView
+        android:layout_marginTop="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#303030"
+        android:letterSpacing="0.04"
+        android:text="추천 전문가"
+        />
+
+    <ListView
+        android:id="@+id/supporter_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorBackground"
+        android:gravity="center"
+        android:scrollbars="none"
+        tools:listitem="@layout/item_support" />
+
+
+
+
+</LinearLayout>

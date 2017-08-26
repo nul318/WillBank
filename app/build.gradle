@@ -31,10 +31,6 @@ dependencies {
     */
     compile 'devlight.io:navigationtabbar:1.2.5'
 
-    /*
-     * Calendar
-     */
-    compile 'com.squareup:android-times-square:1.6.5@aar'
 
     /*
      * RoundCornerProgressBar
@@ -45,6 +41,20 @@ dependencies {
      * Chart
      */
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+
+    /*
+     * Glide
+     */
+
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+
+    /*
+     * LineChart
+     */
+    compile 'com.github.blackfizz:eazegraph:1.2.2@aar'
+    compile 'com.nineoldandroids:library:2.4.0'
+
 
 
     testCompile 'junit:junit:4.12'
