@@ -26,5 +26,10 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    /*
+    * Bottom Navigation Bar
+    */
+    compile 'devlight.io:navigationtabbar:1.2.5'
+
     testCompile 'junit:junit:4.12'
 }

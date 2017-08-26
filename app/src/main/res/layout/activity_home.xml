@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <FrameLayout
+        android:id="@+id/wrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <devlight.io.library.ntb.NavigationTabBar
+            android:id="@+id/ntb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:ntb_active_color="@color/colorAccent"
+            app:ntb_animation_duration="400"
+            app:ntb_scaled="false"
+            app:ntb_bg_color="@color/colorPrimary"
+            app:ntb_icon_size_fraction="0.5"
+            app:ntb_inactive_color="#FFFFFF"
+            app:ntb_swiped="true"
+            app:ntb_tinted="true"
+            app:ntb_title_mode="all"
+            app:ntb_title_size="10sp"
+            app:ntb_titled="true"
+            />
+
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>
