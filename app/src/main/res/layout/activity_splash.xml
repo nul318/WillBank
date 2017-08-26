@@ -5,15 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.willbank.activity.SplashActivity"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/color_primary"
     >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="윌뱅크"
-        android:textSize="30sp"
-        android:textColor="@color/colorWhite"
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/logo"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 

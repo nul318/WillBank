@@ -41,6 +41,10 @@ dependencies {
      */
     compile 'com.akexorcist:RoundCornerProgressBar:2.0.3'
 
+    /*
+     * Chart
+     */
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
 
 
     testCompile 'junit:junit:4.12'
