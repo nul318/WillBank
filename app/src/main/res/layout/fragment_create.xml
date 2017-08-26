@@ -1,0 +1,160 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+             android:padding="@dimen/activity_horizontal_margin"
+                tools:context="com.nmsohn.willbank.CreateActivity$PlaceholderFragment">
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+        >
+
+            <TextView
+                    android:id="@+id/txt_title"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_challenge" />
+
+            <LinearLayout
+                    android:id="@+id/phrase1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_title"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="50dp">
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/set_start"
+                >
+
+                    <EditText
+                            android:id="@+id/input_start"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:hint="@string/prompt_start_date" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                        android:id="@+id/from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingTop="25dp"
+                        android:layout_weight="1"
+                        android:text="From" />
+
+                <android.support.design.widget.TextInputLayout
+                        android:id="@+id/set_finish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                >
+
+                    <EditText
+                            android:id="@+id/input_finish"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:hint="@string/prompt_finish_date" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                        android:id="@+id/to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="25dp"
+                        android:text="To" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/phrase2"
+                    android:layout_below="@+id/phrase1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp">
+
+                <TextView
+                        android:id="@+id/txt_daily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/txt_daily" />
+
+                <TextView
+                        android:id="@+id/slash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="/" />
+
+                <TextView
+                        android:id="@+id/txt_due"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/txt_due" />
+
+                <TextView
+                        android:id="@+id/until"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="until" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/phrase3"
+                    android:layout_below="@+id/phrase2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp">
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <EditText
+                            android:id="@+id/input_action"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/action_do" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/phrase4"
+                    android:layout_below="@+id/phrase3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp">
+
+                <TextView
+                        android:id="@+id/txt_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+</FrameLayout>

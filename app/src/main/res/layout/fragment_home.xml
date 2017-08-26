@@ -1,0 +1,123 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="layout.HomeFragment"
+         >
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+            <LinearLayout
+                    android:id="@+id/thumbnail"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="7dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rose"
+                        android:civ_border_width="0dp"
+                        android:civ_border_dolor="#FF000000"
+                        android:padding="10dp"/>
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="1dp"
+                      android:layout_alignTop="@+id/thumbnail"
+                      android:layout_toRightOf="@+id/thumbnail"
+                      android:paddingLeft="10dp"
+                      android:paddingTop="10dp"
+                      android:id="@+id/title"
+                      android:text="TextView"
+                      android:textStyle="bold"/>
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:id="@+id/completion"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+
+                    app:rcBackgroundPadding="5dp"
+                    android:layout_margin="1dp"
+                    android:padding="10dp"
+                    android:layout_below="@+id/title"
+                    android:layout_toRightOf="@+id/thumbnail"
+            />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/will"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:layout_centerHorizontal="true"
+                    android:text="Pledge"
+                    android:padding="10dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:id="@+id/title_pledge"
+
+            />
+            <TextView
+                    android:padding="10dp"
+                    android:text="TextView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/title_pledge"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_pledge"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/graph"
+                android:padding="5dp"
+                android:layout_below="@+id/will"
+
+        >
+            <TextView
+                    android:layout_centerHorizontal="true"
+                    android:text="Tracking"
+                    android:padding="10dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:id="@+id/title_tracker"
+
+            />
+
+            <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:padding="10dp"
+            android:layout_below="@+id/title_tracker"
+            android:id="@+id/chart">
+
+            </com.github.mikephil.charting.charts.BarChart>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

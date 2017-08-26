@@ -1,3 +1,135 @@
 <resources>
-    <string name="app_name">WillBank</string>
+    <string name="app_name">Willbank</string>
+    <string name="title_home">Home</string>
+    <string name="title_record">Record</string>
+    <string name="title_community">Community</string>
+    <string name="title_ranking">Ranking</string>
+
+
+    <!--Sign up/ Sign in -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_name">Fullname</string>
+    <string name="prompt_birth">Birthdate</string>
+    <string name="prompt_mobile">Mobile number</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_sign_up">Sign Upt</string>
+    <string name="action_sign_out">Sign Out</string>
+    <string name="invalid_username">Username is invalid</string>
+    <string name="invalid_password">Password is too short</string>
+    <string name="incorrect_password">Password is incorrect</string>
+    <string name="missing_field">This field is required</string>
+    <string name="btn_link_to_register">Not a member? Create one now!</string>
+    <string name="btn_link_to_sign_in">Already a member? Sign in</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+
+    <!--setup-->
+    <string name="lbl_challenge">Pledge</string>
+    <string name="lbl_commitment">Commitment</string>
+    <string name="lbl_declaration">Declaration</string>
+    <string name="prompt_start_date">Start Date</string>
+    <string name="prompt_finish_date">Finish Date</string>
+    <string name="txt_daily">Everyday</string>
+    <string name="txt_due">Due date</string>
+    <string name="txt_from">From</string>
+    <string name="txt_to">To</string>
+    <string name="txt_currency">Won</string>
+    <string name="prompt_amount">Amount</string>
+    <string name="btn_declare">Declare</string>
+    <string name="btn_later">Try later</string>
+    <string name="btn_commit">Commit</string>
+    <string name="btn_start">Start now!</string>
+    <string name="title_activity_setup">setup</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_do">Action</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact based on your message
+        history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value"/>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_create">CreateActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
