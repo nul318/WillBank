@@ -31,5 +31,17 @@ dependencies {
     */
     compile 'devlight.io:navigationtabbar:1.2.5'
 
+    /*
+     * Calendar
+     */
+    compile 'com.squareup:android-times-square:1.6.5@aar'
+
+    /*
+     * RoundCornerProgressBar
+     */
+    compile 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+
+
+
     testCompile 'junit:junit:4.12'
 }

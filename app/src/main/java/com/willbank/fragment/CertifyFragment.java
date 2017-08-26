@@ -6,7 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.squareup.timessquare.CalendarPickerView;
 import com.willbank.R;
+
+import java.util.Calendar;
+import java.util.Date;
 
 
 public class CertifyFragment extends Fragment {
@@ -18,13 +22,17 @@ public class CertifyFragment extends Fragment {
         final View view = inflater.inflate(R.layout.fragment_certify, container, false);
 
 
+        Calendar nextYear = Calendar.getInstance();
+        nextYear.add(Calendar.YEAR, 1);
 
+        CalendarPickerView calendar = (CalendarPickerView) view.findViewById(R.id.calendar_view);
+        Date today = new Date();
+        calendar.init(today, nextYear.getTime())
+                .withSelectedDate(today);
 
 
         return view;
     }
-
-
 
 
 }
